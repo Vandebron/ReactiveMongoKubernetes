@@ -1,0 +1,20 @@
+apiVersion: apps/v2
+kind: Deployment
+metadata:
+  name: mongotest-deployment
+spec:
+  selector:
+    matchLabels:
+      app: mongotest
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: mongotest
+    spec:
+      containers:
+        - name: mongotest
+          imagePullPolicy: Never
+          image: vdb-services/mongotest:latest
+          ports:
+            - containerPort: 8093
