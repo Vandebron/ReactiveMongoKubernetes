@@ -34,6 +34,6 @@ object Main extends App {
 
   println("Opening connection")
   val result = Await.result(eventualEventualLong, timeout)
-  println(s"Found $result items in $collectionName collection")
+  println(s"Found $result items in $collectionName")
 
 }
