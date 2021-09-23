@@ -1,4 +1,7 @@
-# ReactiveMongoKubernetes
+# ReactiveMongo on Kubernetes connection failure
+
+## Background
+This a minimal example to reproduce a connection failure from Reactive Mongo when run on Kubernetes
 
 ## Instructions
 
